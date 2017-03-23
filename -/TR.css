@@ -1,0 +1,230 @@
+/*********************************
+header
+*********************************/
+
+header>div{
+	box-sizing:border-box;
+	width:100%;
+	height:100%;
+	max-width:1140px;
+	margin:auto;
+}
+@media \0screen{
+	overflow: hidden;
+}
+/*********************************
+main
+*********************************/
+main{
+	box-sizing:border-box;
+	max-width:1140px;
+	padding:10px 20px;
+	padding-left:300px;
+	margin:auto;
+}
+main dd,main dd *{
+	word-wrap:break-word;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+main *::selection{
+	background-color:rgba(0, 0, 0, .1);
+}
+main a{
+	text-decoration:underline;
+}
+/*面包屑导航*/
+
+.breadcrumbs span{
+	color:#555;
+}
+.breadcrumbs span::after{
+	content:" - ";
+}
+.breadcrumbs span:last-of-type::after{
+	content:" \2198 ";
+	position:relative;
+	top:3px;
+}
+.breadcrumbs h1{
+	margin:10px 0;
+	text-align:center;
+}
+.breadcrumbs::after{
+	content:"建议有能力阅读英文者查看w3c官网原文，如果要转载本站译文，请注明出处";
+	font-size:13px;
+	color:#ccc;
+	display:inline-block;
+	width:100%;
+	text-align:right;
+}
+
+article{
+	max-width:850px;
+	margin:0 auto 10px;
+	overflow:hidden;
+	padding:0 5px 20px;
+}
+.contents{
+	overflow:hidden;
+	padding:0 20px;
+	display:table;
+	background:#ddd;
+	border-radius:5px;
+}
+h5{
+	font-size:1em;
+	font-weight:normal;
+}
+h2,h3{
+	position:relative;
+	margin:20px 0 15px 10px;
+}
+p a{
+	color:#36b;
+}
+ul{
+	margin:0;
+	padding:0 0 0 1.2em;
+}
+ul li{
+	display:block;
+	position:relative;
+}
+ul li:before{
+	content:"\27a2";
+	position:absolute;
+	left:-1em;
+	top:0;
+}
+ol ol{
+	list-style-type:lower-roman;
+}
+li p{
+	text-indent:0;
+}
+#theme{
+	width:249px;
+	text-indent:13px;
+}
+#theme>h5{
+	color:#fff;
+	margin:8px 0;
+	font-size:1.2em;
+	line-height:3;
+	background-color:#aaa;
+	box-shadow:2px 2px 10px #333;
+	border-radius:1px;
+	overflow:hidden;
+}
+#theme>a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	border-radius:1px;
+	margin-right:20px;
+	transition-property:background-color,right,top,box-shadow,margin;
+	transition-duration:.8s;
+	background-color:#025B9D;
+	position:relative;
+	right:0;
+	box-shadow:1px 1px 4px #aaa;
+}
+#theme>.current_page, #theme>a:hover{
+	background-color:#3079AE;
+	right:-20px;
+	top:-2px;
+	box-shadow:5px 5px 5px #111;
+}
+#theme:hover .current_page{
+	background-color:#025B9D;
+	right:0;
+	top:0;
+	box-shadow:0 0 0 #000;
+}
+#theme>.current_page:hover{
+	background-color:#3079AE;
+	right:-20px;
+	top:-2px;
+	box-shadow:5px 5px 5px #111;
+}
+#theme *::selection{
+	background-color:rgba(0, 0, 0, .2);
+}
+#theme a{
+	white-space:nowrap;
+	overflow:hidden;
+}
+#theme:hover .current_page::after, #theme>a::after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	width:2em;
+	background-image: -webkit-linear-gradient(right, #025B9D, #025B9D, rgba(2,91,157,0));
+	background-image: -moz-linear-gradient(right, #025B9D, #025B9D, rgba(2,91,157,0));
+	background-image: linear-gradient(to left, #025B9D, #025B9D, rgba(2,91,157,0));
+}
+#theme .current_page::after, #theme>a:hover::after{
+	background-image: linear-gradient(to left, #3079AE, #3079AE, rgba(48,121,174,0));
+}
+#theme .current_page:hover::after{
+	background-image: linear-gradient(to left, #3079AE, #3079AE, rgba(48,121,174,0));
+}
+
+
+/*********************************
+1200px
+*********************************/
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:720px){
+	
+header{
+	height:53px;
+}
+header h1{
+	font-size: 18px;
+	margin: 7px;
+	line-height: 1.2;
+}
+main {
+  margin-left: 0;
+}
+h2:before{
+	left:-15px;
+	content:"\258c";
+	color:#3879D9;
+	position:absolute;
+}
+.contents{
+	display:block;
+}
+p,li{
+	font-size:15px;
+	margin:10px 0;
+}
+aside{
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, .2);
+	left:-100%;
+}
+/*#fixed{
+	display:block;
+	position:fixed;
+	left:50px;
+}
+#_1{
+	height:100px;
+	width:100px;
+	background: rgba(2, 2, 2, .5);
+	border-radius:50%;
+	background-image:
+}*/
+
+}
