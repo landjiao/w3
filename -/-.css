@@ -51,8 +51,8 @@ h1{
 	float:left;
 	height:107px;
 	width:249px;
-	background:url(http://imglf1.nosdn.127.net/img/aU9Oclh5YlRxcGJpZEFpTW9LZDZxbjBwOXo4eno4aUFKK1dDZEJMSWEvenZBWlN5eXN6QmF3PT0.png) no-repeat center;
-	background-size:cover;
+	background:url(http://imglf1.nosdn.127.net/img/aU9Oclh5YlRxcGJpZEFpTW9LZDZxbjBwOXo4eno4aUFKK1dDZEJMSWEvenZBWlN5eXN6QmF3PT0.png) no-repeat left;
+	background-size:contain;
 	box-shadow:4px 0 15px #111;
 	transition-property:box-shadow;
 	transition-duration:1s;
@@ -65,8 +65,28 @@ h1{
 	height:100%;
 	width:100%;
 }
-header h1::selection,header h1 br::selection{
+body *::selection{
 	background-color:rgba(0, 0, 0, .1);
+}
+body *::before::selection,*::after::selection{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.breadcrumbs span{
+	color:#555;
+}
+.breadcrumbs span::after{
+	content:" - ";
+}
+.breadcrumbs span:last-of-type::after{
+	content:" \2198 ";
+	position:relative;
+	top:3px;
+}
+.breadcrumbs h1{
+	margin:10px 0;
+	text-align:center;
 }
 
 @media screen and (max-width:1200px){

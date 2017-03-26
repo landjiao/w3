@@ -1,3 +1,60 @@
-[tb]{
+nav>*{
+	margin:0;
+	font-weight:normal;
+	position:relative;
+}
+nav a{
+	color:#035C9D;
+}
+nav a:visited{
+	color:#551A8B;
+}
+nav>*::before{
+	display:inline-block;
+	position:absolute;
+	left:-5rem;
+}
+nav h2{
+	left:-1rem;
+	font-weight:bold;
+	counter-reset:t2;
+	counter-increment:t1;
+}
+nav h2::before{
+	content:counter(t1);
+}
+nav h3{
+	left:-.5rem;
+	font-weight:bold;
+	counter-reset:t3;
+	counter-increment:t2;
+}
+nav h3::before{
+	content:counter(t1)"."counter(t2);
+}
+nav h4{
+	counter-reset:t4;
+	counter-increment:t3;
+}
+nav h4::before{
+	content:counter(t1)"."counter(t2)"."counter(t3);
+}
+
+main,nav{
+	counter-reset:t1;
+	padding-left:2rem;
+}
+main>*{
+	line-height:2;
+	padding-left:7rem;
+	counter-reset:t1;
+	position:relative;
+}
+main h2,main h3{
+	color:#035C9D;
+	left:-.5rem;
+}
+main h2::before, main h3::before, main h4::before, main h5::before, main h6::before{
+	content:"§";
 	
 }

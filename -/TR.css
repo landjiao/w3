@@ -33,32 +33,6 @@ main *::selection{
 main a{
 	text-decoration:underline;
 }
-/*面包屑导航*/
-
-.breadcrumbs span{
-	color:#555;
-}
-.breadcrumbs span::after{
-	content:" - ";
-}
-.breadcrumbs span:last-of-type::after{
-	content:" \2198 ";
-	position:relative;
-	top:3px;
-}
-.breadcrumbs h1{
-	margin:10px 0;
-	text-align:center;
-}
-.breadcrumbs::after{
-	content:"建议有能力阅读英文者查看w3c官网原文，如果要转载本站译文，请注明出处";
-	font-size:13px;
-	color:#ccc;
-	display:inline-block;
-	width:100%;
-	text-align:right;
-}
-
 article{
 	max-width:850px;
 	margin:0 auto 10px;
@@ -176,6 +150,10 @@ li p{
 }
 
 
+aside{
+	position:absolute;
+	width:249px;
+}
 /*********************************
 1200px
 *********************************/
