@@ -1,3 +1,9 @@
+main,nav{
+	counter-reset:t1;
+}
+nav{
+	padding-left:7rem;
+}
 nav>*{
 	margin:0;
 	font-weight:normal;
@@ -14,9 +20,11 @@ nav>*::before{
 	position:absolute;
 	left:-5rem;
 }
-nav h2{
-	left:-1rem;
+nav h2,nav h3{
+	left:-.5rem;
 	font-weight:bold;
+}
+nav h2{
 	counter-reset:t2;
 	counter-increment:t1;
 }
@@ -24,8 +32,6 @@ nav h2::before{
 	content:counter(t1);
 }
 nav h3{
-	left:-.5rem;
-	font-weight:bold;
 	counter-reset:t3;
 	counter-increment:t2;
 }
@@ -40,21 +46,65 @@ nav h4::before{
 	content:counter(t1)"."counter(t2)"."counter(t3);
 }
 
-main,nav{
-	counter-reset:t1;
-	padding-left:2rem;
-}
-main>*{
+main{
 	line-height:2;
-	padding-left:7rem;
+	padding:0 2rem;
 	counter-reset:t1;
 	position:relative;
 }
 main h2,main h3{
 	color:#035C9D;
+	position:relative;
 	left:-.5rem;
 }
-main h2::before, main h3::before, main h4::before, main h5::before, main h6::before{
-	content:"§";
-	
+main a{
+	color:#035C9D;
+}
+main a:visited{
+	color:#551A8B;
+}
+main>*::before{
+	display:inline-block;
+}
+main h2,main h3{
+	left:-.5rem;
+	font-weight:bold;
+}
+main h2{
+	counter-reset:t2;
+	counter-increment:t1;
+}
+main h2::before{
+	content:"§  "counter(t1);
+}
+main h3{
+	counter-reset:t3;
+	counter-increment:t2;
+}
+main h3::before{
+	content:"§  "counter(t1)"."counter(t2);
+}
+main h2::before,main h3::before{
+	width:3em;
+}
+main h4{
+	counter-reset:t4;
+	counter-increment:t3;
+}
+main h4::before{
+	content:"§　"counter(t1)"."counter(t2)"."counter(t3)"　";
+}
+main h5{
+	counter-reset:t5;
+	counter-increment:t4;
+}
+main h5::before{
+	content:"§　"counter(t1)"."counter(t2)"."counter(t3)"."counter(t4)"　";
+}
+main h6{
+	counter-reset:t6;
+	counter-increment:t5;
+}
+main h6::before{
+	content:"§　"counter(t1)"."counter(t2)"."counter(t3)"."counter(t4)"."counter(t5)"　";
 }

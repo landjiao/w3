@@ -72,6 +72,7 @@ body *::before::selection,*::after::selection{
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	user-select: none;
 }
 .breadcrumbs span{
 	color:#555;
