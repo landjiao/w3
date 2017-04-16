@@ -56,34 +56,40 @@
 </nav>
 <main>
 	<h2>引言 / Introduction</h2>
-	<p>
-		<i>This section is non-normative.</i>
-		<br><i>本条不规范</i>
-	</p>
-	<p>
-		HTML is the World Wide Web’s core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.
-		<br>HTML是万维网联盟的核心标记语言。起初，HTML是为语义化描述科学文档设计的。然而，它的整体设计使得它能够在到接下来的这些年适应下来，并且应用在许多其他类型的文档，甚至是一些应用程序。
-	</p>
 		<h3 id="background">背景 / Background</h3>
-		<p>
-			This section is non-normative.
-			<br><i>本条不规范</i>
-		<p>
-			This specification is intended for authors of documents and scripts that use the features defined in this specification, implementors of tools that operate on pages that use the features defined in this specification, and individuals wishing to establish the correctness of documents or implementations with respect to the requirements of this specification.
-			<br>本标准是为以下人员提供的：使用本标准中定义的特性的文档和脚本的作者，在使用了本标准的特性的页面上作业的实施人员，以及希望建立文档正确性或实现本标准要求的实现个人。
-		<p>
-			This document is probably not suited to readers who do not already have at least a passing familiarity with Web technologies, as in places it sacrifices clarity for precision, and brevity for completeness. More approachable tutorials and authoring guides can provide a gentler introduction to the topic.
-			<br>
-		</p>
-		<p>
-			In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.
-		</p>
+			<p lang="en"><i>This section is non-normative.</i></p>
+			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="en">HTML is the World Wide Web’s core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.</p>
+			<p lang="en">是万维网联盟的核心标记语言。起初，HTML是为语义化描述科学文档设计的。然而，它的整体设计使得它能够在到接下来的这些年适应下来，并且应用在许多其他类型的文档，甚至是一些应用程序。</p>
 		<h3 id="Audience">受众 / Audience</h3>
+			<p lang="en"><i>This section is non-normative.</i></p>
+			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="en">This specification is intended for authors of documents and scripts that use the features defined in this specification, implementors of tools that operate on pages that use the features defined in this specification, and individuals wishing to establish the correctness of documents or implementations with respect to the requirements of this specification.</p>
+			<p lang="zh">本规范是为以下人员提供的：使用本标准中定义的特性的文档和脚本的作者，在使用了本标准的特性的页面上作业的实施人员，以及希望按照本规范的要求确认文档或实现的正确性个人。</p>
+			<p lang="en">This document is probably not suited to readers who do not already have at least a passing familiarity with Web technologies, as in places it sacrifices clarity for precision, and brevity for completeness. More approachable tutorials and authoring guides can provide a gentler introduction to the topic.</p>
+			<p lang="zh">本文档对于还不够熟悉Web技术的读者来说可能不太合适，因为有些地方为了精确性在细节上做出了让步，为了完整性而较为简洁明了。更易懂的教程和编者指南在细节上会做出更温和的介绍。</p>
+			<p lang="en">
+			In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.</p>
+			<p lang="zh">特别是，熟悉DOM基础对完整理解本规范中更具技术性的部分是很有必要。对Web接口定义语言、超文本传输协议、可扩展标记语言、统一码、字符编码、Javascript和层叠样式表有所理解也会有帮助但不是非常有必要。</p>
 		<h3 id="scope">范围 / Scope</h3>
+			<p lang="en"><i>This section is non-normative</i>
+			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="en">This specification is limited to providing a semantic-level markup language and associated semantic-level scripting APIs for authoring accessible pages on the Web ranging from static dicuments to dynamic applications</p>
+			<p lang="zh">本规范仅为可访问的Web页面——从静态的文档到动态的应用——提供一个语义级别的标记语言和与之有关连的脚本API</p>
+			<p lang="en">The Scope of this specification does not include providing mechanisms for media-specific customization of presentation (although default rendering rules for Web browsers are included at the end of this specification, and several mechanisms for hooking into CSS are provided as part of the language).
+			<p lang="zh">本规范的范围不包含提供特定媒体的自定义呈现机制（尽管本规范末尾提到了Web浏览器的默认渲染规则，一些挂钩到CSS的机制也当作语言的一部分提及）</p>
+			<p lang="en">The scope of this specification is not to describe an entire operating system. In particular, hardware configuration software, image manipulation tools, and applications that users would be expected to use with high-end workstations on a daily basis are out of scope.</p>
+			<p lang="zh">本规范的范围不是描述整个操作系统。具体而言，硬件配置软件，图像处理工具和用户预期在高端工作站上每天使用的应用程序都在本规范的范围之外。</p>
 		<h3 id="history">历史 / History</h3>
+			<p lang="en"><i>This section is non-normative</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
+			<p lang="en">For its first five years (1990-1995), HTML went through a number of revisions and experienced a number of extensions, primarily hosted first at CERN, and then at the IETF.</p>
+			<p lang="zh">在HTML的第一个五年（1990-1995）里，HTML经过了许多次的修订和扩展。起初主要是欧洲核子研究中心（CERN）在主持，后来这项工作转交给了互联网工程任务组（IETF）。</p>
+			<p lang="en">With the creation of the W3C, HTML's development changed venue again. A first abortive attempt at extending HTML in 1995 known as HTML 3.0 then made way to a more pragmatic approach known as HTML 3.2, which was completed in 1997. HTML 4.01 quickly followed later that same year.</p>
+			<p lang="zh">随着万维网联盟(W3C)的建立，HTML的开发再次易主。1995年，第一次扩展HTML以失败告终，这次尝试被称为HTML 3.0。然后，W3C制定了更加务实的HTML 3.2，并于1997完成。紧接着，W3C就于同年开始了HTML 4.01的制定。</p>
 		<h3 id="design-notes">设计笔记 / Design notes</h4>
 			<h4 id="serializability-of-script-execution">脚本执行的可串行化 / Serializability of script execution</h4>
-			<h4 id="compliance-with-other-specifications">符合其他规范 / Compliance with other specifications</h4>
+			<h4 id="compliance-with-other-specifications">与其他规范的一致性 / Compliance with other specifications</h4>
 			<h4 id="design-notes-extensibility">可扩展性 / extensibility</h4>
 		<h3 id="html-vs-xhtml">超文本标记语言和可扩展超文本标记语言的比较 / HTML vs XHTML</h3>
 		<h3 id="structure-of-this-specification">本规范的结构 / Structure of this specification</h3>
