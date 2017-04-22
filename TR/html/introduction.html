@@ -30,7 +30,7 @@
 	</div>
 </header>
 <nav>
-	<h2><a href="introduction.html">引言 / Introduction</a></h2>
+	<h2><a href="introduction.html#introduction">引言 / Introduction</a></h2>
 		<h3><a href="introduction.html#background">背景 / Background</a></h3>
 		<h3><a href="introduction.html#Audience">受众 / Audience</a></h3>
 		<h3><a href="introduction.html#scope">范围 / Scope</a></h3>
@@ -55,7 +55,7 @@
 			<h4><a href="introduction.html#suggested-reading">建议阅读 / Suggested reading</a></h4>
 </nav>
 <main>
-	<h2>引言 / Introduction</h2>
+	<h2 id="introduction">引言 / Introduction</h2>
 		<h3 id="background">背景 / Background</h3>
 			<p lang="en"><i>This section is non-normative.</i></p>
 			<p lang="zh"><i>本条不规范</i></p>
@@ -68,8 +68,7 @@
 			<p lang="zh">本规范是为以下人员提供的：使用本标准中定义的特性的文档和脚本的作者，在使用了本标准的特性的页面上作业的实施人员，以及希望按照本规范的要求确认文档或实现的正确性个人。</p>
 			<p lang="en">This document is probably not suited to readers who do not already have at least a passing familiarity with Web technologies, as in places it sacrifices clarity for precision, and brevity for completeness. More approachable tutorials and authoring guides can provide a gentler introduction to the topic.</p>
 			<p lang="zh">本文档对于还不够熟悉Web技术的读者来说可能不太合适，因为有些地方为了精确性在细节上做出了让步，为了完整性而较为简洁明了。更易懂的教程和编者指南在细节上会做出更温和的介绍。</p>
-			<p lang="en">
-			In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.</p>
+			<p lang="en">In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.</p>
 			<p lang="zh">特别是，熟悉DOM基础对完整理解本规范中更具技术性的部分是很有必要。对Web接口定义语言、超文本传输协议、可扩展标记语言、统一码、字符编码、Javascript和层叠样式表有所理解也会有帮助但不是非常有必要。</p>
 		<h3 id="scope">范围 / Scope</h3>
 			<p lang="en"><i>This section is non-normative</i>
@@ -96,8 +95,15 @@
 			<p lang="en">A proof of concept to show that it was possible to extend HTML 4.01's forms to provide many of the features that XForms 1.0 introduced, without requiring browsers to implement rendering engines that were incompatible with existing HTML Web pages, was the first result of this renewed interest. At this early stage, while the draft was already publicly available, and input was already being solicited from all sources, the specification was only under Opera Software's copyright.</p>
 			<p lang="zh">概念验证表明，在不要求浏览器实现不兼容现有HTML网页渲染引擎的情况下，扩展HTML 4.01的表单来提供XForms 1.0介绍中的特征是可能的，这是激发重新开发HTML兴趣的第一个产物。在这的早期阶段，虽然这个草案已经公开可用，也已经从所有来源征求意见，但这项标准只在欧朋 Software版权下发布。</p>
 			<p lang="en">The idea that HTML's evolution should be reopened was tested at a W3C workshop in 2004, where some of the principles that underlie the HTML work (described below), as well as the aforementioned early draft proposal covering just forms-related features, were presented to the W3C jointly by Mozilla and Opera. The proposal was rejected on the grouds that the proposal conflicted with the previously chosen direction for the Web's evolution; the W3C staff and membership voted to continue developing XML-based replacements instead.</p>
-			<p lang="zh">2004年，W3C工作组考察了应当重新开发HTML的想法。Mozilla和Opera一起向W3C提出了在HTML工作上的一些原则（如下所述）和包括上文所述的只涵盖表单相关特点的早期草案。这项建议因为与之前选择的Web演化方向有冲突被驳回；W3C的职员和会员投票决定继续开发基于XML的代替品。</p>
-			<p lang="en"></p>
+			<p lang="zh">2004年，W3C工作组考察了应当重新开发HTML的想法。Mozilla基金会和Opera一起向W3C提出了在HTML工作上的一些原则（如下所述）和包括上文所述的只涵盖表单相关特点的早期草案。这项建议因为与之前选择的Web演化方向有冲突被驳回；W3C的职员和会员投票决定继续开发基于XML的代替品。</p>
+			<p lang="en">Shortly thereafter, Apple, Mozilla, and Opera jointly announced their intent to continue working on the effort under the umbrella of a new venue called the WHATWG. A public mailing list was created, and the draft was moved to the WHATWG site. The copyright was subsequently amended to be jointly owned by all three vendors, and to allow reuse of the specification.</p>
+			<p lang="zh">随后不久，苹果公司、Mozilla基金会和欧朋共同宣布他们将继续在一个称作网页超文本应用技术工作小组（WHATWG，Web Hypertext Application Technology Working Group，下称WHATWG）的新组织下继续工作。他们创建了一个公开的邮件列表，草案也转移到了WHATWG站点下。版权后来修改为三个厂商共同拥有，并且允许这个规范的重用。</p>
+			<p lang="en">The WHATWG was based on several core principles, in particular that technologies need to be backwards compatible, that specifications and implementations need to match even if this means changing the specification rather than the implementations, and that specifications need to be detailed enough that implementations can achieve complete interoperability without reverse-engineering each other.</p>
+			<p lang="zh">WHATWG是基于一些核心原则，具体而言，在技术需要向后兼容，规范和实现需要匹配即使这意味着改变规范而不是实现，规范需要足够详细到无需逆向工程即可让实现可以达到完全的互操作性。</p>
+			<p lang="en">The latter requirement in particular required that the scope of the HTML specification include what had previously been specified in three separate documents: HTML 4.01, XHTML 1.1, and DOM level 2 HTML. It also meant including significantly more detail than had previously been considered the norm</p>
+			<p lang="zh">其中最后一个原则，要求HTML规范的范围包括之前三个独立的文档——HTML 4.01、XHTML 1.1和DOM Level 2 HTML中明确规定的部分。这也意味着包括明显地标明更多细节要超过之前考虑过的规范。</p>
+			<p lang="en">In 2006, the W3C indicated an interest to participate in the development of HTML 5.0 after all, and in 2007 formed a working group chartered to work with the WHATWG on the development of the HTML specification. Apple, Mozilla, adn Opera allowed the W3C to publish the specification under the W3C copyright, while keeping a version with the less restrictive lecense on the WHATWG site.</p>
+			<p lang="zh">2006年，W3C终究还是表示有兴趣参与HTML 5.0开发。2007年，组建了一个工作组和WHATWG共同开发HTML 5标准。苹果公司，Mozilla基金会和欧朋允许W3C在W3C版权下发布该标准，但是要保持一个版本WHATWG网站上限制较少的许可协议。</p>
 		<h3 id="design-notes">设计笔记 / Design notes</h4>
 			<h4 id="serializability-of-script-execution">脚本执行的可串行化 / Serializability of script execution</h4>
 			<h4 id="compliance-with-other-specifications">与其他规范的一致性 / Compliance with other specifications</h4>
