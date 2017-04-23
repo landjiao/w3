@@ -58,12 +58,12 @@
 	<h2 id="introduction">引言 / Introduction</h2>
 		<h3 id="background">背景 / Background</h3>
 			<p lang="en"><i>This section is non-normative.</i></p>
-			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">HTML is the World Wide Web’s core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.</p>
 			<p lang="en">是万维网联盟的核心标记语言。起初，HTML是为语义化描述科学文档设计的。然而，它的整体设计使得它能够在到接下来的这些年适应下来，并且应用在许多其他类型的文档，甚至是一些应用程序。</p>
 		<h3 id="Audience">受众 / Audience</h3>
 			<p lang="en"><i>This section is non-normative.</i></p>
-			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">This specification is intended for authors of documents and scripts that use the features defined in this specification, implementors of tools that operate on pages that use the features defined in this specification, and individuals wishing to establish the correctness of documents or implementations with respect to the requirements of this specification.</p>
 			<p lang="zh">本规范是为以下人员提供的：使用本标准中定义的特性的文档和脚本的作者，在使用了本标准的特性的页面上作业的实施人员，以及希望按照本规范的要求确认文档或实现的正确性个人。</p>
 			<p lang="en">This document is probably not suited to readers who do not already have at least a passing familiarity with Web technologies, as in places it sacrifices clarity for precision, and brevity for completeness. More approachable tutorials and authoring guides can provide a gentler introduction to the topic.</p>
@@ -72,7 +72,7 @@
 			<p lang="zh">特别是，熟悉DOM基础对完整理解本规范中更具技术性的部分是很有必要。对Web接口定义语言、超文本传输协议、可扩展标记语言、统一码、字符编码、Javascript和层叠样式表有所理解也会有帮助但不是非常有必要。</p>
 		<h3 id="scope">范围 / Scope</h3>
 			<p lang="en"><i>This section is non-normative</i>
-			<p lang="zh"><i>本条不规范</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">This specification is limited to providing a semantic-level markup language and associated semantic-level scripting APIs for authoring accessible pages on the Web ranging from static dicuments to dynamic applications</p>
 			<p lang="zh">本规范仅为可访问的Web页面——从静态的文档到动态的应用——提供一个语义级别的标记语言和与之有关连的脚本API</p>
 			<p lang="en">The Scope of this specification does not include providing mechanisms for media-specific customization of presentation (although default rendering rules for Web browsers are included at the end of this specification, and several mechanisms for hooking into CSS are provided as part of the language).
@@ -104,7 +104,18 @@
 			<p lang="zh">其中最后一个原则，要求HTML规范的范围包括之前三个独立的文档——HTML 4.01、XHTML 1.1和DOM Level 2 HTML中明确规定的部分。这也意味着包括明显地标明更多细节要超过之前考虑过的规范。</p>
 			<p lang="en">In 2006, the W3C indicated an interest to participate in the development of HTML 5.0 after all, and in 2007 formed a working group chartered to work with the WHATWG on the development of the HTML specification. Apple, Mozilla, adn Opera allowed the W3C to publish the specification under the W3C copyright, while keeping a version with the less restrictive lecense on the WHATWG site.</p>
 			<p lang="zh">2006年，W3C终究还是表示有兴趣参与HTML 5.0开发。2007年，组建了一个工作组和WHATWG共同开发HTML 5标准。苹果公司，Mozilla基金会和欧朋允许W3C在W3C版权下发布该标准，但是要保持一个版本WHATWG网站上限制较少的许可协议。</p>
+			<p lang="en">For a number of years, both groups then worked together under the same editor: Ian Hickson. In 2011, the groups came to the conclusion that they had differnet goals: the W3C wanted to draw a line in the sand for features for a HTML 5.0 Recommendation, while the WHATWG wanted to continue working on a Continually Updated Specification for HTML, continuously maintaining the specification and adding new features. In mid 2012, a new editing team was introduced at the W3C to take care of creating a HTML 5.0 Recommendation and prepare a Working Draft for next HTML version.</p>
+			<p lang="zh">多年来，双方都在同一个编辑——伊恩·希克森的主导下工作。2011年，两个组织得出结论：他们的不表不尽相同。W3C想要为HTML 5推荐标准在沙子里画一条线，而WHATWG则想为一个HTML创建一个持续更新规范，不断维护标准，并增加新的特性。2012年年中，W3C引入了一个新的编辑团队来负责创建一个HTML 5推荐标准并为下一个HTML版本准备了一个工作草案</p>
+			<p lang="en">Since then, the W3C HTML WG has been cherry picking patches from the WHATWG that resolved bugs registered on the W3C HTML specification or more accurately represented implemented reality in user agents. At time of publication of this document, patcher from the <a href="https://whatwg.org/specs/web-apps/current-work/#">WHATWG HTML specification</a> have been merged until January 12, 2016. The W3C HTML editors have also added patches that resulted from discussions and decisions made by the W3C WG as well a bug fixes from bugs not shared by the WHATWG.</p>
+			<p lang="zh">从此，W3C HTML工作组就从WHATWG中随机挑选补丁来修复存在在W3C HTML规范中或者在用户代理中更准确的代表性的错误。本文档发布的时候，从WHATWG HTML规范中取得的补丁已经合并到2016年1月12日。W3C HTML的编辑也已经添加了W3C工作组讨论确定的补丁以及一个WHATWG没有分享的错误的修复</p>
+			<p lang="en">A separate document is published to document the differences between the HTML specified in this document and the language described in the HTML 4.01 specification.[<a href="https://www.w3.org/TR/html/references.html#biblio-html5-diff">HTML5-DIFF</a>]</p>
+			<p lang="zh">发布了一个独立文档记录本文档中HTML的详情和HTML 4.01规范语言描述之间的差异【<a href="https://www.w3.org/TR/html/references.html#biblio-html5-diff">HTML5-差异</a>】</p>
 		<h3 id="design-notes">设计笔记 / Design notes</h4>
+			<p lang="en"><i>This section is non-normative</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
+			<p lang="en">It must be admitted that many aspects of HTML appear at first glance to be nonsensical and inconsistent.</p>
+			<p lang="zh">必须承认HTML许多方面乍看会感觉很荒谬，不一致。</p>
+			<P lang="en">HTML, its supporting DOM APIs, as well as many of its sipporting technologies, have been developed over a period of several decades by a wide array of people with different priorities who, in many cases, did not know of each other's existece.</P>
 			<h4 id="serializability-of-script-execution">脚本执行的可串行化 / Serializability of script execution</h4>
 			<h4 id="compliance-with-other-specifications">与其他规范的一致性 / Compliance with other specifications</h4>
 			<h4 id="design-notes-extensibility">可扩展性 / extensibility</h4>
