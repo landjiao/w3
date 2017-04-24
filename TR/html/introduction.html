@@ -71,7 +71,7 @@
 			<p lang="en">In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.</p>
 			<p lang="zh">特别是，熟悉DOM基础对完整理解本规范中更具技术性的部分是很有必要。对Web接口定义语言、超文本传输协议、可扩展标记语言、统一码、字符编码、Javascript和层叠样式表有所理解也会有帮助但不是非常有必要。</p>
 		<h3 id="scope">范围 / Scope</h3>
-			<p lang="en"><i>This section is non-normative</i>
+			<p lang="en"><i>This section is non-normative.</i>
 			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">This specification is limited to providing a semantic-level markup language and associated semantic-level scripting APIs for authoring accessible pages on the Web ranging from static dicuments to dynamic applications</p>
 			<p lang="zh">本规范仅为可访问的Web页面——从静态的文档到动态的应用——提供一个语义级别的标记语言和与之有关连的脚本API</p>
@@ -80,7 +80,7 @@
 			<p lang="en">The scope of this specification is not to describe an entire operating system. In particular, hardware configuration software, image manipulation tools, and applications that users would be expected to use with high-end workstations on a daily basis are out of scope.</p>
 			<p lang="zh">本规范的范围不是描述整个操作系统。具体而言，硬件配置软件，图像处理工具和用户预期在高端工作站上每天使用的应用程序都在本规范的范围之外。</p>
 		<h3 id="history">历史 / History</h3>
-			<p lang="en"><i>This section is non-normative</i></p>
+			<p lang="en"><i>This section is non-normative.</i></p>
 			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">For its first five years (1990-1995), HTML went through a number of revisions and experienced a number of extensions, primarily hosted first at CERN, and then at the IETF.</p>
 			<p lang="zh">在HTML的第一个五年（1990-1995）里，HTML经过了许多次的修订和扩展。起初主要是欧洲核子研究中心（CERN）在主持，后来这项工作转交给了互联网工程任务组（IETF）。</p>
@@ -105,19 +105,32 @@
 			<p lang="en">In 2006, the W3C indicated an interest to participate in the development of HTML 5.0 after all, and in 2007 formed a working group chartered to work with the WHATWG on the development of the HTML specification. Apple, Mozilla, adn Opera allowed the W3C to publish the specification under the W3C copyright, while keeping a version with the less restrictive lecense on the WHATWG site.</p>
 			<p lang="zh">2006年，W3C终究还是表示有兴趣参与HTML 5.0开发。2007年，组建了一个工作组和WHATWG共同开发HTML 5标准。苹果公司，Mozilla基金会和欧朋允许W3C在W3C版权下发布该标准，但是要保持一个版本WHATWG网站上限制较少的许可协议。</p>
 			<p lang="en">For a number of years, both groups then worked together under the same editor: Ian Hickson. In 2011, the groups came to the conclusion that they had differnet goals: the W3C wanted to draw a line in the sand for features for a HTML 5.0 Recommendation, while the WHATWG wanted to continue working on a Continually Updated Specification for HTML, continuously maintaining the specification and adding new features. In mid 2012, a new editing team was introduced at the W3C to take care of creating a HTML 5.0 Recommendation and prepare a Working Draft for next HTML version.</p>
-			<p lang="zh">多年来，双方都在同一个编辑——伊恩·希克森的主导下工作。2011年，两个组织得出结论：他们的不表不尽相同。W3C想要为HTML 5推荐标准在沙子里画一条线，而WHATWG则想为一个HTML创建一个持续更新规范，不断维护标准，并增加新的特性。2012年年中，W3C引入了一个新的编辑团队来负责创建一个HTML 5推荐标准并为下一个HTML版本准备了一个工作草案</p>
+			<p lang="zh">多年来，双方都在同一个编辑——伊恩·希克森的主导下工作。2011年，两个组织得出结论：他们的不表不尽相同。W3C想要为HTML 5推荐标准在沙子里画一条线，而 WHATWG 则想为一个 HTML 创建一个持续更新规范，不断维护标准，并增加新的特性。2012年年中，W3C 引入了一个新的编辑团队来负责创建一个 HTML 5推荐标准并为下一个HTML版本准备了一个工作草案</p>
 			<p lang="en">Since then, the W3C HTML WG has been cherry picking patches from the WHATWG that resolved bugs registered on the W3C HTML specification or more accurately represented implemented reality in user agents. At time of publication of this document, patcher from the <a href="https://whatwg.org/specs/web-apps/current-work/#">WHATWG HTML specification</a> have been merged until January 12, 2016. The W3C HTML editors have also added patches that resulted from discussions and decisions made by the W3C WG as well a bug fixes from bugs not shared by the WHATWG.</p>
 			<p lang="zh">从此，W3C HTML工作组就从WHATWG中随机挑选补丁来修复存在在W3C HTML规范中或者在用户代理中更准确的代表性的错误。本文档发布的时候，从WHATWG HTML规范中取得的补丁已经合并到2016年1月12日。W3C HTML的编辑也已经添加了W3C工作组讨论确定的补丁以及一个WHATWG没有分享的错误的修复</p>
 			<p lang="en">A separate document is published to document the differences between the HTML specified in this document and the language described in the HTML 4.01 specification.[<a href="https://www.w3.org/TR/html/references.html#biblio-html5-diff">HTML5-DIFF</a>]</p>
 			<p lang="zh">发布了一个独立文档记录本文档中HTML的详情和HTML 4.01规范语言描述之间的差异【<a href="https://www.w3.org/TR/html/references.html#biblio-html5-diff">HTML5-差异</a>】</p>
 		<h3 id="design-notes">设计笔记 / Design notes</h4>
-			<p lang="en"><i>This section is non-normative</i></p>
+			<p lang="en"><i>This section is non-normative.</i></p>
 			<p lang="zh"><i>本条不规范。</i></p>
 			<p lang="en">It must be admitted that many aspects of HTML appear at first glance to be nonsensical and inconsistent.</p>
 			<p lang="zh">必须承认HTML许多方面乍看会感觉很荒谬，不一致。</p>
-			<P lang="en">HTML, its supporting DOM APIs, as well as many of its sipporting technologies, have been developed over a period of several decades by a wide array of people with different priorities who, in many cases, did not know of each other's existece.</P>
+			<P lang="en">HTML, its supporting DOM APIs, as well as many of its sipporting technologies, have been developed over a period of several decades by a wide array of people with different priorities who, in many cases, did not know of each other's existence.</P>
+			<p lang="zh">HTML，它所支持的 DOM API，以及它支持的技术多年来已经被一大群人在大量案例中，互不相识，带着不同的目的人开发完毕。</p>
+			<p lang="en">Features have thus arisen from many sources, and have not always been designed in especially consistent ways. Furthermore, because of the unique characteristics of the Web, implementation bugs have often become de-facto, and now de-jure, standards, as content is often unintentionally written in ways that rely on them before they can be fixed.</p>
+			<p lang="zh">因而，特性从大量的来源中出现，而且设计方式并不总是特别一致。此外，因为Web的独特特点，实现错误经常变成既定的事实，现在的准则，标准。因为这些错误在修复前被他们常常无意中写进内容里面。</p>
+			<p lang="en">Despite all this, efforts have been made to adhere to certain design goals. These are described in the next few subsections.</p>
+			<p lang="zh">尽管这样，人们依然为坚持被某些设计目标而这些努力。以下几小节详细描述了这些。</p>
 			<h4 id="serializability-of-script-execution">脚本执行的可串行化 / Serializability of script execution</h4>
+			<p lang="en"><i>This section is non-normative.</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
+			<p lang="en">To avoid exposing Web authors to the complexities of multithreading, the HTML and DOM APIs are designed such that no script can ever detect the simultaneous execution of other scripts. Even with <a href="https://www.w3.org/TR/workers/#worker">workers</a>, the intent is that the behavior of implementations can be thought of as completely serializing the execution of all scripts in all <a href="https://www.w3.org/TR/html/browsers.html#browsing-context">browsing contexts</a>.</p>
+			<p lang="zh">为了避免将多线程的复杂性呈现给Web作者，HTML 和 DOM API 的设计使得没有一个脚本可以检测到其他脚本的同时执行。甚至 <a href="https://www.w3.org/TR/workers/#worker">workers</a>，意图实现行为可以被认为在全部<a href="https://www.w3.org/TR/html/browsers.html#browsing-context">浏览上下文</a>中是完全地串行执行所有脚本。</p>
 			<h4 id="compliance-with-other-specifications">与其他规范的一致性 / Compliance with other specifications</h4>
+			<p lang="en"><i>This section is non-normative.</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
+			<p lang="en">This specification interacts with and relies on a wide variety of other specifications. In certain circumstances, unfortunately, conflicting needs have led to this specification violating the requirements of these other specifications. Whenever this has occurred, the transgressions have each been noted as a "willful violation", and the reason for the violation has been noted.</p>
+			<p lang="zh">本规范和其他各种各样的规范互相影响和依赖。从某一方面讲，很不幸，（和其他规范的）互相冲突的需求导致本规范违反了这些其他的规范。</p>
 			<h4 id="design-notes-extensibility">可扩展性 / extensibility</h4>
 		<h3 id="html-vs-xhtml">超文本标记语言和可扩展超文本标记语言的比较 / HTML vs XHTML</h3>
 		<h3 id="structure-of-this-specification">本规范的结构 / Structure of this specification</h3>
