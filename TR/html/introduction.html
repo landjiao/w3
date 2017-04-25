@@ -129,9 +129,22 @@
 			<h4 id="compliance-with-other-specifications">与其他规范的一致性 / Compliance with other specifications</h4>
 			<p lang="en"><i>This section is non-normative.</i></p>
 			<p lang="zh"><i>本条不规范。</i></p>
-			<p lang="en">This specification interacts with and relies on a wide variety of other specifications. In certain circumstances, unfortunately, conflicting needs have led to this specification violating the requirements of these other specifications. Whenever this has occurred, the transgressions have each been noted as a "willful violation", and the reason for the violation has been noted.</p>
-			<p lang="zh">本规范和其他各种各样的规范互相影响和依赖。从某一方面讲，很不幸，（和其他规范的）互相冲突的需求导致本规范违反了这些其他的规范。</p>
+			<p lang="en">This specification interacts with and relies on a wide variety of other specifications. In certain circumstances, unfortunately, conflicting needs have led to this specification violating the requirements of these other specifications. Whenever this has occurred, the transgressions have each been noted as a <b>"willful violation"</b>, and the reason for the violation has been noted.</p>
+			<p lang="zh">本规范和其他各种各样的规范互相影响和依赖。很不幸，从某一方面讲，（和其他规范的）互相冲突的需求导致本规范违反了这些其他的规范。任何时候发生这种情况，这些错误都被记为“故意违规”，并且错误的理由会被记下来。</p>
 			<h4 id="design-notes-extensibility">可扩展性 / extensibility</h4>
+			<p lang="en"><i>This section is non-normative.</i></p>
+			<p lang="zh"><i>本条不规范。</i></p>
+			<p lang="en">HTML has a wide array of extensibility mechanisms that can be used for adding semantics in a safe manner:</p>
+			<p lang="zh">HTML有各种各样的可扩展机制可用于以一种安全的方式添加语义。</p>
+			<ul>
+				<li>
+					<p lang="en">Authors can use the <a href="https://www.w3.org/TR/html/dom.html#element-attrdef-global-class">class</a> attribute to extend elements, effectively creating their own elements, while using the most applicable existing "real" HTML element, so that browsers and other tools that don't know of the extension can still support in somewhat well. This is the tack used by microformats, for example.</p>
+					<p lang="zh">作者可以使用 <a href="http://lw3.org/TR/html/dom.html#element-attrdef-global-class">class</a> 属性来扩展元素，有效地创建他们自己的元素，同时也使用了合适的现有“真实”的HTML元素，以便浏览器和其他不清楚这些扩展的工具仍然可以良好地支持。例如，微格式使用的也是这种方法。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can include data for inline client-side scripts or server-side site-wide scripts to process using the <a href="https://www.w3.org/TR/html/dom.html#element-attrdef-global-data">data-*=""</a> attributes.These are guaranteed to never be touched by browsers, and allow scripts to include data on HTML elements that scripts can then look for and process.</p>
+				</li>
+			</ul>
 		<h3 id="html-vs-xhtml">超文本标记语言和可扩展超文本标记语言的比较 / HTML vs XHTML</h3>
 		<h3 id="structure-of-this-specification">本规范的结构 / Structure of this specification</h3>
 			<h4 id="how-to-read-this-specification">如何翻阅本规范 / How to read this specification</h4>
