@@ -143,6 +143,27 @@
 				</li>
 				<li>
 					<p lang="en">Authors can include data for inline client-side scripts or server-side site-wide scripts to process using the <a href="https://www.w3.org/TR/html/dom.html#element-attrdef-global-data">data-*=""</a> attributes.These are guaranteed to never be touched by browsers, and allow scripts to include data on HTML elements that scripts can then look for and process.</p>
+					<p lang="zh">作者可以使用 <a href="https://www.w3.org/TR/html/dom.html#element-attrdef-global-data">data-*=""</a> 属性包含数据让内联客户端脚本或者服务端站点范围脚本来处理。可以保证永远不会被浏览器碰这些数据，允许脚本包含数据在HTML元素。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can use the <a href="https://www.w3.org/TR/html/document-metadata.html#elementdef-meta">&lt;meta name="" content=""&gt;</a> mechanism to include page-wide metadata by registering <a href="https://www.w3.org/TR/html/document-metadata.html#register-the-names">extensions to the predefined set of metadata names</a>.</p>
+					<p lang="zh">作者可以使用 <a href="https://www.w3.org/TR/html/document-metadata.html#elementdef-meta">&lt;meta name="" content=""&gt;</a>机制通过<a href="https://www.w3.org/TR/html/document-metadata.html#register-the-names">预定义元数据名称集扩展</a> 来包含页面范围的元数据。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can use the <a href="https://www.w3.org/TR/html/document-metadata.html#element-attrdef-link-rel">rel=""</a> mechanism to annotate links with specific meanings by registering <a href="https://www.w3.org/TR/html/links.html#link-types-extensions-to-the-predefined-set-of-link-type">extensions to the predefined set of link types</a>. This is also used by microformats.</p>
+					<p lang="zh">作者可以使用 <a href="https://www.w3.org/TR/html/document-metadata.html#element-attrdef-link-rel">rel=""</a> 机制通过 <a href="https://www.w3.org/TR/html/links.html#link-types-extensions-to-the-predefined-set-of-link-type">预定义链接类型集扩展</a> 以具体意义注释链接。微格式也使用了这种方法。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can embed raw data using the <a href="https://www.w3.org/TR/html/semantics-scripting.html#elementdef-script">&lt;script type=""&gt;</a> mechanism with a custom type, for further handling by inline or server-side scripts.</p>
+					<p lang="zh">作者可以用<a href="https://www.w3.org/TR/html/semantics-scripting.html#elementdef-script">&lt;script type=""&gt;</a>机制附加的定制类型嵌入原生数据，进一步让客户端或者服务端脚本进行处理。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can create plugins and invoke them using <a href="https://www.w3.org/TR/html/semantics-embedded-content.html#elementdef-embed">&lt;embed&gt;</a> element. This is how Flash work.</p>
+					<p lang="zh">作者可以制作插件并用<a href="https://www.w3.org/TR/html/semantics-embedded-content.html#elementdef-embed">&lt;embed&gt;</a>标签调用他们。这也是Flash的工作方式。</p>
+				</li>
+				<li>
+					<p lang="en">Authors can extend APIs using JavaScripts prototyping mechanism. This is widely used by script libraries, for instance.</p>
+					<p lang="zh">作者可以用JavaScripts原型机制扩展API，这也被共犯应用于脚本库的实例中。</p>
 				</li>
 			</ul>
 		<h3 id="html-vs-xhtml">超文本标记语言和可扩展超文本标记语言的比较 / HTML vs XHTML</h3>
